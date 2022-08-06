@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "validator": "^13.7.0"
+  },
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "vishnuEyunni2",
+  "license": "ISC",
+  "description": ""
+}

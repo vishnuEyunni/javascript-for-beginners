@@ -2,11 +2,20 @@ const template = document.createElement('template');
 
 template.innerHTML = `
   <style>
-    h3 {color: green;}
+    .description {
+      color: red;
+      font-size: 12px;
+    }
   </style>
-  <h3 data-title>
-    <slot></slot>
-  </h3>
+  <div>
+    <label>
+      <input type="checkbox" />
+      <slot></slot>
+      <span class="description">
+        <slot name="description"></slot>
+      </span>
+    </label>
+  </div>
 `;
 
 class TodoItem extends HTMLElement {

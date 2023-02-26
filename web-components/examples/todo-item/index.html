@@ -13,13 +13,24 @@
   </head>
   <body>
     <script src="app.js"></script>
+    <script src="Expandable.js"></script>
     <h3>h3 tag</h3>
-    <todo-item>
-      This is a custom component that has its own shadow DOM
-    </todo-item>
-    <todo-item>
+    <todo-item checked>
       viola
       <span slot="description">This is a named slot</span>
     </todo-item>
+    <todo-item>
+      This is a custom component that has its own shadow DOM
+    </todo-item>
+    <div>
+      <ul is="expandable-list" data-expanded>
+        <li>First</li>
+        <li>second</li>
+        <ul is="expandable-list" data-expanded>
+          <li>First</li>
+          <li>second</li>
+        </ul>
+      </ul>
+    </div>
   </body>
 </html>
